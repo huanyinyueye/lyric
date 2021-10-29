@@ -1,3 +1,1 @@
-# lyric
- 
- Practice Sidebar, Infinite Scroll, Scroll to top.
+#  Practice Sidebar, Infinite Scroll, Scroll to top.
