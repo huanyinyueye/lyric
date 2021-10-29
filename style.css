@@ -17,7 +17,7 @@ body {
 }
 
 ul.menu {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     display: inline;
     width:auto;
     font-size: 20px;
@@ -101,7 +101,7 @@ ul.menu {
     width: 100%;
     overflow: auto;
     float: left;
-    transition: width 0.5s;
+    transition: 0.5s;
 }
 
 #sidebar {
@@ -129,7 +129,7 @@ button {
     min-width: 50px;
     min-height: 50px;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
     font-size: 20px;
     font-weight: bold;
     background-color: #c28585;

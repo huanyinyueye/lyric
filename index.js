@@ -8,7 +8,7 @@ button.addEventListener('click', _ => {
   });
 // Sidebar button
 
-
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -16,13 +16,14 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
+//When scroll over 20px, show scroll to top button
+
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 //Scroll to top button
 
 let i = 0; 
-window.onscroll = function () { scrollFunction() };
 window.addEventListener('scroll', () => {
     const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
     if (i == 3) { i = 0; }
@@ -138,7 +139,7 @@ function createPost(num) {
                 ああしてこうして言ってたって</br>
                 愛して どうして？ 言われたって</br>
                 遊びだけなら簡単で 真剣交渉無茶苦茶で</br>
-                思いもしない軽い言葉</br>
+                思いもしない軽い(重い）言葉</br>
                 何度使い古すのか？</br>
                 </br>
                 どうせ</br>
@@ -173,7 +174,7 @@ function createPost(num) {
                 ああしてこうして言ってたって</br>
                 愛して どうして？ 言われたって</br>
                 遊びだけなら簡単で 真剣交渉支離滅裂で</br>
-                思いもしない重い真実は</br>
+                思いもしない重い真実（嘘）は</br>
                 タブーにしなくちゃな？</br>
                 きっと</br>
                 期待してたんだ出来レースでも</br>
@@ -187,4 +188,4 @@ function createPost(num) {
     }
     container.appendChild(post);
 }
-//Make Infinite Scroll 
+//Infinite Scroll
