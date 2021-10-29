@@ -1,1 +1,1 @@
-#  Practice Sidebar, Infinite Scroll, Scroll to top.
+#  Practice Sidebar, Infinite Scroll and Scroll to top.
