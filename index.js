@@ -6,18 +6,8 @@ const button = document.getElementById('toggle');
 button.addEventListener('click', _ => {
     sidebar.classList.toggle('collapsed');
   });
+// Sidebar button
 
-let i = 0; 
-window.onscroll = function () { scrollFunction() };
-window.addEventListener('scroll', () => {
-    const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
-    if (i == 3) { i = 0; }
-    if (scrollTop + clientHeight > scrollHeight - 5) {
-        setTimeout(createPost(i), 5000);
-        i++;
-    }
-
-});
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -29,7 +19,18 @@ function scrollFunction() {
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
+//Scroll to top button
 
+let i = 0; 
+window.onscroll = function () { scrollFunction() };
+window.addEventListener('scroll', () => {
+    const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
+    if (i == 3) { i = 0; }
+    if (scrollTop + clientHeight > scrollHeight - 5) {
+        setTimeout(createPost(i), 5000);
+        i++;
+    }
+});
 function createPost(num) {
     const post = document.createElement('div');
     if (num == 0) {
@@ -184,6 +185,6 @@ function createPost(num) {
                 傘を閉じて 濡れて帰ろうよ
             </p>`;
     }
-    //   Appending the post to the container.
     container.appendChild(post);
 }
+//Make Infinite Scroll 

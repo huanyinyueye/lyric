@@ -17,24 +17,15 @@ body {
 }
 
 ul.menu {
-    /* Set (ul class=drop-down-menu)'s external view */
-  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Set font */
     display: inline;
-    width:fit-content;
+    width:auto;
     font-size: 20px;
-    /* Set font size */
   }
   ul.menu li {
-    /* Set external view of (ul class=drop-down-menu  >> li) */
     position: relative;
     white-space: nowrap;
     border-right: #ccc 1px solid;
-  }
-  ul.menu>li:last-child {
-    border-right: none;
-    /* When mouse move to the task(ul class=drop-down-menu  >> li), erased border-right */
   }
   
   ul.menu a {
@@ -49,28 +40,9 @@ ul.menu {
   }
   
   ul.menu a:hover {
-    /* Set hover of menu */
     background-color: rgb(2, 82, 202);
     color: #fff;
   }
-  
-  ul.menu li:hover>a {
-    /* Keep hover when move mouse to the part under it */
-    background-color: rgb(2, 82, 202);
-    color: #fff;
-  }
-  
-  ul.menu li:hover>ul {
-    /* Keep hover when move mouse to the part under it */
-    display: block;
-  }
-  
-  ul.menu li:hover>ul {
-    /* Keep hover when move mouse to the part under it */
-    display: block;
-  }
-  
-
 
 .container {
     display: flex;
@@ -179,8 +151,6 @@ button {
     border-radius: 10px;
     font-size: 18px;
 }
-
-
 
 @keyframes slide {
     from {
