@@ -23,20 +23,18 @@ function topFunction() {
 }
 //Scroll to top button
 
-let i = 0; 
+[0, 1, 2].map(x => createPost(x));
 window.addEventListener('scroll', () => {
     const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
-    if (i == 3) { i = 0; }
     if (scrollTop + clientHeight > scrollHeight - 5) {
-        setTimeout(createPost(i), 5000);
-        i++;
+        [0, 1, 2].map(x => createPost(x));;
     }
 });
 function createPost(num) {
     const post = document.createElement('div');
     if (num == 0) {
         post.className = 'text';
-        post.innerHTML = `<h1>Cry Baby</h1></br>
+        post.innerHTML = `<h1>Cry Baby<a name="Crybaby"></a></h1></br>
                 <img src="./pic/CryBaby.jpg" alt=""></br>
                 <p>
                 胸ぐらを掴まれて</br>
@@ -79,7 +77,7 @@ function createPost(num) {
     }
     else if (num == 1) {
         post.className = 'text';
-        post.innerHTML = `<h1>Last StarDust</h1></br>
+        post.innerHTML = `<h1>Last StarDust<a name="LastStardust"></a></h1></br>
                 <img src="./pic/LastStarDust.jpg" alt=""></br>
                 <p>
                 ふりしきる強い雨描いた夢の果て</br>
@@ -120,7 +118,7 @@ function createPost(num) {
     }
     else{
         post.className = 'text';
-        post.innerHTML = `<h1>カワキヲアメク</h1></br>
+        post.innerHTML = `<h1>カワキヲアメク<a name="kawakiwoameku"></a></h1></br>
                 <img src="./pic/kawakiwoameku.jpg" alt=""></br>
 	            <p>
                 未熟 無ジョウ されど 美しくあれ</br>

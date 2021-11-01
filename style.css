@@ -106,7 +106,7 @@ ul.menu {
 
 #sidebar {
     background: rgb(65, 64, 64);
-    width: 10%;
+    width: 15%;
     height: 100%;
     position: fixed;
 }
@@ -121,9 +121,9 @@ ul.menu {
 
 #content {
     background: transparent;
-    width: 90%;
+    width: 85%;
 }
-button {
+#toggle {
     position: fixed;
     left: 0px;
     min-width: 50px;
@@ -138,18 +138,20 @@ button {
 }
 #toTopBtn {
     display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 1800px;
-    z-index: 99;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
     border: none;
     outline: none;
     background-color: rgb(255, 0, 0);
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 10px;
     font-size: 18px;
+    border-radius:10px;
+    text-align:center;
 }
 
 @keyframes slide {
