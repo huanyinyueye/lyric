@@ -7,30 +7,21 @@
 </head>
 
 <body>
-    <div id="sidebar">
-        <ul class=menu>
-            </br>
-            </br>
-            <li>
-                <a href="#Crybaby">Cry Baby</a>
-            </li>
-            <li>
-                <a href="#LastStardust">Last Stardust</a>
-            </li>
-            <li>
-                <a href="#kawakiwoameku">カワキヲアメク</a>
-            </li>
-        </ul>
+    <div id="sidebar" style="display:none">
+        <button id="closebtn" onclick="btn_close()">Close &times;</button>
+        <a href="#Crybaby" class="sidebarText">Cry Baby</a>
+        <a href="#LastStardust" class="sidebarText">Last Stardust</a>
+        <a href="#kawakiwoameku" class="sidebarText">カワキヲアメク</a>
     </div>
-    <div class="container" id="content">
-        <button id="toggle">三</button>
-        <h1>Infinite Scroll & Scroll to Top & Sidebar</h1>
-    
+    <div id="main">
+        <button id="toggle" onclick="btn_open()">三</button>
+        <div class="container" id="content">
+            <h1>Infinite Scroll & Scroll to Top & Sidebar</h1>
+        </div>
     </div>
     <div>
-        <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="toTopBtn">Top</button>
     </div>
 </body>
 
 </html>
-

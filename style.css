@@ -16,33 +16,23 @@ body {
     flex-direction: column;
 }
 
-ul.menu {
-    font-family: monospace;
-    display: inline;
-    width:auto;
-    font-size: 20px;
-  }
-  ul.menu li {
-    position: relative;
-    white-space: nowrap;
-    border-right: #ccc 1px solid;
-  }
-  
-  ul.menu a {
+.sidebarText {
     color: rgb(255, 255, 255);
     display: block;
     padding: 0 30px;
     text-decoration: none;
     line-height: 40px;
-    position:relative;
-    width: auto;
-    
-  }
-  
-  ul.menu a:hover {
+    position: relative;
+    width: 100%;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 300;
+}
+
+.sidebarText:hover {
     background-color: rgb(2, 82, 202);
     color: #fff;
-  }
+}
 
 .container {
     display: flex;
@@ -57,8 +47,9 @@ ul.menu {
     margin-top: 50px;
     color: blanchedalmond;
 }
-.container button{ 
-    left:0px;
+
+.container button {
+    left: 0px;
 }
 
 .text {
@@ -82,7 +73,7 @@ ul.menu {
     font-family: monospace;
     padding: 10px;
     text-align: center;
-    color: rgb(245, 239, 239);
+    color: white;
     font-size: 18px;
 }
 
@@ -96,14 +87,6 @@ ul.menu {
     height: 450px;
 }
 
-#sidebar, #content {
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    float: left;
-    transition: 0.5s;
-}
-
 #sidebar {
     background: rgb(65, 64, 64);
     width: 15%;
@@ -111,18 +94,16 @@ ul.menu {
     position: fixed;
 }
 
-#sidebar.collapsed {
-    width: 0;
-}
-
-#sidebar.collapsed+#content {
+#closebtn {
+    position: relative;
     width: 100%;
+    height: 30px;
+    font-family: monospace;
+    font-size: 25px;
+    background-color: rgb(255, 177, 177);
+    color: black;
 }
 
-#content {
-    background: transparent;
-    width: 85%;
-}
 #toggle {
     position: fixed;
     left: 0px;
@@ -132,26 +113,28 @@ ul.menu {
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
-    background-color: #c28585;
-    color: rgb(0, 0, 0);
+    background-color: rgb(76, 72, 92);
+    color: white;
     border: white 2px;
+    border-radius: 15px;
 }
+
 #toTopBtn {
     display: none;
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
+    position: fixed;
+    width: 60px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
     border: none;
     outline: none;
-    background-color: rgb(255, 0, 0);
+    background-color: red;
     color: white;
     cursor: pointer;
     padding: 15px;
     font-size: 18px;
-    border-radius:10px;
-    text-align:center;
+    border-radius: 10px;
+    text-align: center;
 }
 
 @keyframes slide {

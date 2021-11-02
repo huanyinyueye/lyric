@@ -1,13 +1,22 @@
 const mybutton = document.getElementById("toTopBtn");
 const container = document.querySelector('.container');
 const sidebar = document.getElementById('sidebar');
-const button = document.getElementById('toggle');
 
-button.addEventListener('click', _ => {
-    sidebar.classList.toggle('collapsed');
-  });
-// Sidebar button
 
+//Sidebar button
+function btn_open() {
+    document.getElementById("main").style.marginLeft = "10%";
+    document.getElementById("sidebar").style.width = "10%";
+    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("toggle").style.display = 'none';
+}
+function btn_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("toggle").style.display = "inline-block";
+}
+
+//When scroll over 20px, show scroll to top button
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -16,13 +25,11 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
-//When scroll over 20px, show scroll to top button
-
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
-//Scroll to top button
 
+//Create post on content for infinite scroll
 [0, 1, 2].map(x => createPost(x));
 window.addEventListener('scroll', () => {
     const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
@@ -116,7 +123,7 @@ function createPost(num) {
                 願いの破片よとわへ
             </p>`;
     }
-    else{
+    else {
         post.className = 'text';
         post.innerHTML = `<h1>カワキヲアメク<a name="kawakiwoameku"></a></h1></br>
                 <img src="./pic/kawakiwoameku.jpg" alt=""></br>
@@ -186,4 +193,3 @@ function createPost(num) {
     }
     container.appendChild(post);
 }
-//Infinite Scroll

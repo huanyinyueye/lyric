@@ -1,1 +1,1 @@
-#  Practice Sidebar, Infinite Scroll and Scroll to top with Vanilla JS
+#  "Sidebar", "Infinite Scroll" and "Scroll to top" with VanillaJS
