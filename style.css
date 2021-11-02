@@ -131,12 +131,3 @@ body {
     border-radius: 10px;
     text-align: center;
 }
-
-@keyframes slide {
-    from {
-        transform: translateY(-30px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}

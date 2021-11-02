@@ -1,2 +1,2 @@
 #  "Sidebar", "Infinite Scroll" and "Scroll to top"
-git page:https://huanyinyueye.github.io/lyric/ 
+Git Page: https://huanyinyueye.github.io/lyric/ 
