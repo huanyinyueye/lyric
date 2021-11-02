@@ -1,9 +1,9 @@
-const mybutton = document.getElementById("toTopBtn");
+const toTopbutton = document.getElementById("toTopBtn");
 const container = document.querySelector('.container');
 const sidebar = document.getElementById('sidebar');
 
 
-//Sidebar button
+// Open/Close sidebar button //
 function btn_open() {
     document.getElementById("main").style.marginLeft = "10%";
     document.getElementById("sidebar").style.width = "10%";
@@ -16,20 +16,22 @@ function btn_close() {
     document.getElementById("openSB").style.display = "inline-block";
 }
 
-//When scroll over 20px, show scroll to top button
+
+// Scroll to top button //
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        toTopbutton.style.display = "block";
     } else {
-        mybutton.style.display = "none";
+        toTopbutton.style.display = "none";
     }
 }
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-//Create post on content for infinite scroll
+
+// Create content for infinite scroll //
 [0, 1, 2].map(x => createPost(x));
 window.addEventListener('scroll', () => {
     const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
@@ -179,7 +181,7 @@ function createPost(num) {
                 ああしてこうして言ってたって</br>
                 愛して どうして？ 言われたって</br>
                 遊びだけなら簡単で 真剣交渉支離滅裂で</br>
-                思いもしない重い真実(うそ）は</br>
+                思いもしない重い真実(うそ)は</br>
                 タブーにしなくちゃな？</br>
                 きっと</br>
                 期待してたんだ出来レースでも</br>
