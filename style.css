@@ -21,7 +21,7 @@ body {
 /*-------------Sidebar-------------*/
 #sidebar {
     background: rgb(65, 64, 64);
-    width: 20%;
+    min-width: 200px;
     height: 100%;
     position: fixed;
 }

@@ -18,7 +18,6 @@ function btn_close() {
 
 
 // Scroll to top button //
-window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         toTopbutton.style.display = "block";
@@ -26,6 +25,7 @@ function scrollFunction() {
         toTopbutton.style.display = "none";
     }
 }
+window.onscroll = function () { scrollFunction() };
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
