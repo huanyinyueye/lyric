@@ -82,11 +82,6 @@ body {
     height: auto;
 }
 
-.text iframe {
-    width: 800px;
-    height: 450px;
-}
-
 #sidebar {
     background: rgb(65, 64, 64);
     width: 15%;
