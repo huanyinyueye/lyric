@@ -8,12 +8,12 @@ function btn_open() {
     document.getElementById("main").style.marginLeft = "10%";
     document.getElementById("sidebar").style.width = "10%";
     document.getElementById("sidebar").style.display = "block";
-    document.getElementById("toggle").style.display = 'none';
+    document.getElementById("openSB").style.display = 'none';
 }
 function btn_close() {
     document.getElementById("main").style.marginLeft = "0%";
     document.getElementById("sidebar").style.display = "none";
-    document.getElementById("toggle").style.display = "inline-block";
+    document.getElementById("openSB").style.display = "inline-block";
 }
 
 //When scroll over 20px, show scroll to top button

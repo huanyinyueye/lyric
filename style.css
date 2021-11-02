@@ -16,6 +16,15 @@ body {
     flex-direction: column;
 }
 
+
+
+/*-------------Sidebar-------------*/
+#sidebar {
+    background: rgb(65, 64, 64);
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
 .sidebarText {
     color: rgb(255, 255, 255);
     display: block;
@@ -28,18 +37,19 @@ body {
     font-size: large;
     font-weight: 300;
 }
-
 .sidebarText:hover {
     background-color: rgb(2, 82, 202);
     color: #fff;
 }
 
+
+
+/*-------------Container-------------*/
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .container>h1 {
     font-family: monospace;
     font-weight: 800;
@@ -48,10 +58,9 @@ body {
     color: blanchedalmond;
 }
 
-.container button {
-    left: 0px;
-}
 
+
+/*-------------Content-------------*/
 .text {
     width: auto;
     height: auto;
@@ -60,7 +69,6 @@ body {
     margin: 40px 0;
     border-radius: 10px;
 }
-
 .text h1 {
     font-size: 40px;
     text-align: center;
@@ -68,7 +76,6 @@ body {
     font-weight: 760;
     color: white;
 }
-
 .text p {
     font-family: monospace;
     padding: 10px;
@@ -76,30 +83,24 @@ body {
     color: white;
     font-size: 18px;
 }
-
 .text img {
     width: 800px;
     height: auto;
 }
 
-#sidebar {
-    background: rgb(65, 64, 64);
-    width: 15%;
-    height: 100%;
-    position: fixed;
-}
 
-#closebtn {
+
+/*-------------Button function-------------*/
+#closeSB {
     position: relative;
     width: 100%;
     height: 30px;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 20px;
     background-color: rgb(255, 177, 177);
     color: black;
 }
-
-#toggle {
+#openSB {
     position: fixed;
     left: 0px;
     min-width: 50px;
@@ -113,7 +114,6 @@ body {
     border: white 2px;
     border-radius: 15px;
 }
-
 #toTopBtn {
     display: none;
     position: fixed;
