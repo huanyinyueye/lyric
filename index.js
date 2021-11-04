@@ -1,23 +1,22 @@
 const toTopbutton = document.getElementById("toTopBtn");
 const container = document.querySelector('.container');
-const sidebar = document.getElementById('mySidebar');
+const SB = document.getElementById('mySidebar');
+const MA = document.getElementById("main");
+const Open = document.getElementById("openbtn");
 
 
 // Open/Close sidebar button //
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("openbtn").style.display = "none";
-  }
-  
-  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.getElementById("openbtn").style.display = "inline-block";
-  }
-
+    if (SB.style.marginLeft == "-250px") {
+        SB.style.marginLeft = "0px";
+        MA.style.marginLeft = "250px";
+    }
+    else {
+        SB.style.marginLeft = "-250px";
+        MA.style.marginLeft = "0px";
+    }
+}
 
 // Scroll to top button //
 function scrollFunction() {
