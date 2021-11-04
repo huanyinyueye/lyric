@@ -7,14 +7,14 @@
 </head>
 
 <body>
-    <div id="sidebar" style="display:none">
-        <button id="closeSB" onclick="btn_close()">Close &times;</button>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#Crybaby" class="sidebarText">Cry Baby</a>
         <a href="#LastStardust" class="sidebarText">Last Stardust</a>
         <a href="#kawakiwoameku" class="sidebarText">カワキヲアメク</a>
     </div>
     <div id="main">
-        <button id="openSB" onclick="btn_open()">三</button>
+        <button class="openbtn" id="openbtn" onclick="openNav()">Open Sidebar</button>
         <div class="container" id="content">
             <h1>"Sidebar" & "Infinite Scroll" & "Scroll to Top"</h1>
         </div>

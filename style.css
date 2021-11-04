@@ -16,40 +16,58 @@ body {
     flex-direction: column;
 }
 
-
-
 /*-------------Sidebar-------------*/
-#sidebar {
-    background: rgb(65, 64, 64);
-    min-width: 200px;
+
+.sidebar {
     height: 100%;
+    width: 0;
     position: fixed;
-}
-.sidebarText {
-    color: rgb(255, 255, 255);
-    display: block;
-    padding: 0 30px;
-    text-decoration: none;
-    line-height: 40px;
-    position: relative;
-    width: 100%;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
     font-family: monospace;
-    font-size: large;
-    font-weight: 300;
-}
-.sidebarText:hover {
-    background-color: rgb(2, 82, 202);
-    color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.8s;
 }
 
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    font-family: monospace;
+    display: block;
+    transition: 0.8s;
+}
 
+/* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    font-family: monospace;
+}
 
 /*-------------Container-------------*/
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .container>h1 {
     font-family: monospace;
     font-weight: 800;
@@ -58,9 +76,24 @@ body {
     color: blanchedalmond;
 }
 
+/* The button used to open the sidebar */
 
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-family: monospace;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
 
 /*-------------Content-------------*/
+
 .text {
     width: auto;
     height: auto;
@@ -69,6 +102,7 @@ body {
     margin: 40px 0;
     border-radius: 10px;
 }
+
 .text h1 {
     font-size: 40px;
     text-align: center;
@@ -76,6 +110,7 @@ body {
     font-weight: 760;
     color: white;
 }
+
 .text p {
     font-family: monospace;
     padding: 10px;
@@ -83,37 +118,22 @@ body {
     color: white;
     font-size: 18px;
 }
+
 .text img {
     width: 800px;
     height: auto;
 }
 
-
-
 /*-------------Button function-------------*/
-#closeSB {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    font-family: monospace;
-    font-size: 20px;
-    background-color: rgb(255, 177, 177);
-    color: black;
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left 0.8s;
+    /* If you want a transition effect */
+    padding: 20px;
 }
-#openSB {
-    position: fixed;
-    left: 0px;
-    min-width: 50px;
-    min-height: 50px;
-    cursor: pointer;
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(76, 72, 92);
-    color: white;
-    border: white 2px;
-    border-radius: 15px;
-}
+
 #toTopBtn {
     display: none;
     position: fixed;
