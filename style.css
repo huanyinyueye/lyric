@@ -69,6 +69,7 @@ body {
 /* The button used to open the sidebar */
 
 .openbtn {
+    position: fixed;
     top: 0px;
     margin-left: -20px;
     font-size: 20px;
